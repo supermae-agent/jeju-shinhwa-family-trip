@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>제주 신화월드 3박4일 가족여행 요약</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f2ea;--paper:#fffaf1;--ink:#22201c;--muted:#756f65;--line:#e5dac8;
+      --orange:#f26b2f;--green:#247b5b;--blue:#2166a6;--yellow:#f0b739;--red:#c94b3a;
+      --shadow:0 20px 50px rgba(54,42,24,.13);--r:24px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at top left,#ffe1b7 0,transparent 30%),linear-gradient(135deg,#f8f1e7,#eef5ee);color:var(--ink);font-family:Pretendard,Apple SD Gothic Neo,system-ui,sans-serif;line-height:1.55}
+    a{color:var(--blue);text-decoration:none;font-weight:700} a:hover{text-decoration:underline}
+    .wrap{max-width:1180px;margin:0 auto;padding:34px 22px 80px}
+    .hero{position:relative;overflow:hidden;border-radius:34px;padding:38px;background:linear-gradient(135deg,#243b2f,#16241d 58%,#54331f);color:white;box-shadow:var(--shadow)}
+    .hero:after{content:"";position:absolute;right:-120px;top:-90px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,#ff9d3e,transparent 62%);opacity:.55}
+    .eyebrow{font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#ffd493}.hero h1{position:relative;margin:10px 0 12px;font-size:42px;line-height:1.08;letter-spacing:-.04em}.hero p{position:relative;max-width:820px;margin:0;color:#f7ead8;font-size:17px}.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.chip{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);padding:9px 13px;border-radius:999px;font-weight:800;font-size:13px;color:#fff}
+    .nav{position:sticky;top:0;z-index:10;margin:18px 0 22px;padding:10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,250,241,.82);backdrop-filter:blur(14px);display:flex;gap:8px;flex-wrap:wrap;box-shadow:0 8px 20px rgba(54,42,24,.08)}
+    .nav a{padding:9px 13px;border-radius:999px;color:#423b31;font-size:13px}.nav a:hover{background:#efe3d0;text-decoration:none}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{background:rgba(255,250,241,.92);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:0 10px 28px rgba(54,42,24,.07)}
+    .span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-6{grid-column:span 6}.span-4{grid-column:span 4}
+    h2{margin:0 0 14px;font-size:25px;letter-spacing:-.03em} h3{margin:0 0 8px;font-size:18px}.small{font-size:13px;color:var(--muted)}
+    .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi div{border-radius:18px;padding:15px;background:#fff;border:1px solid var(--line)}.kpi b{display:block;font-size:22px;color:var(--orange)}.kpi span{font-size:13px;color:var(--muted);font-weight:700}
+    .timeline{display:grid;gap:14px}.day{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start;padding:16px;border-radius:20px;background:#fff;border:1px solid var(--line)}.badge{height:54px;border-radius:18px;display:grid;place-items:center;color:white;font-weight:900;box-shadow:inset 0 -8px 18px rgba(0,0,0,.12)}.d1{background:var(--orange)}.d2{background:var(--blue)}.d3{background:var(--green)}.d4{background:var(--yellow);color:#2c2417}.day ul{margin:8px 0 0;padding-left:18px}.day li{margin:4px 0}
+    .route{width:100%;border-collapse:separate;border-spacing:0 10px}.route th{text-align:left;color:var(--muted);font-size:12px}.route td{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px}.route td:first-child{border-left:1px solid var(--line);border-radius:14px 0 0 14px;font-weight:800}.route td:last-child{border-right:1px solid var(--line);border-radius:0 14px 14px 0}
+    .list{display:grid;gap:10px}.item{padding:14px;border-radius:17px;background:#fff;border:1px solid var(--line)}.item strong{display:block}.tag{display:inline-block;margin:4px 6px 0 0;padding:4px 8px;border-radius:999px;background:#f1e4ce;color:#5b4a32;font-size:12px;font-weight:800}
+    .links{columns:2;column-gap:28px}.links li{break-inside:avoid;margin:0 0 8px}.notice{border-left:5px solid var(--orange);background:#fff4e8}.ok{border-left:5px solid var(--green)}.warn{border-left:5px solid var(--red)}
+    .mapimg{width:100%;border-radius:18px;border:1px solid var(--line);background:#fff}.footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:900px){.span-8,.span-6,.span-4{grid-column:span 12}.kpi{grid-template-columns:repeat(2,1fr)}.day{grid-template-columns:1fr}.links{columns:1}.hero h1{font-size:32px}.nav{border-radius:22px}.nav a{font-size:12px}}
+    @media print{body{background:white}.nav{display:none}.card,.hero{box-shadow:none}.wrap{max-width:none}.hero{break-inside:avoid}.card{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Jeju Shinhwa World Family Trip</div>
+      <h1>22개월 아이 둘과 함께하는<br/>제주 신화월드 3박4일 실행 요약</h1>
+      <p>두 가족, 총 6명 / 토 11:00 제주공항 도착 → 화 15:00 제주공항 출발. 핵심 전략은 “낮잠 유지, 외부 이동 최소화, 신화월드 내부 만족도 극대화, 토요일 화산 BBQ + 불꽃놀이”입니다.</p>
+      <div class="chips">
+        <span class="chip">숙소: 제주 신화월드</span><span class="chip">이동: 렌트 승용차</span><span class="chip">아이: 22개월 2명</span><span class="chip">저녁: 어른 술 가능</span><span class="chip">주의: 6명 이동 차량 확인</span>
+      </div>
+    </section>
+
+    <nav class="nav">
+      <a href="#plan">일정</a><a href="#food">맛집</a><a href="#tour">관광</a><a href="#hwasan">화산+불꽃놀이</a><a href="#videos">유튜브</a><a href="#links">지도 링크</a><a href="#checklist">체크리스트</a>
+    </nav>
+
+    <section class="grid">
+      <div class="card span-12">
+        <div class="kpi">
+          <div><b>3박4일</b><span>토·일·월·화</span></div>
+          <div><b>70%</b><span>신화월드 내부 활용</span></div>
+          <div><b>1회/일</b><span>외부 이동은 짧게</span></div>
+          <div><b>21:10</b><span>토요일 불꽃놀이 목표</span></div>
+        </div>
+      </div>
+
+      <div id="plan" class="card span-8">
+        <h2>최종 일정 요약</h2>
+        <div class="timeline">
+          <article class="day"><div class="badge d1">DAY 1<br/>토</div><div><h3>도착 / 적응 / 화산 BBQ</h3><ul><li>11:00 제주공항 도착 → 렌트카·카시트 확인</li><li>공항 근처 고기국수 점심 후 신화월드 이동</li><li>체크인·낮잠·리조트 산책</li><li><b>19:30~20:00 화산 HWASAN 입장 → 21:10 신화스퀘어 불꽃놀이</b></li></ul></div></article>
+          <article class="day"><div class="badge d2">DAY 2<br/>일</div><div><h3>신화월드 풀데이</h3><ul><li>오전: 신화테마파크</li><li>점심: 리조트 내 빠른 식사</li><li>13:00~15:00 낮잠</li><li>오후: 신화워터파크 / 수영장</li><li>저녁: 흑돼지 또는 리조트 근처 식사</li></ul></div></article>
+          <article class="day"><div class="badge d3">DAY 3<br/>월</div><div><h3>오설록 권역 외부 관광</h3><ul><li>오전: 오설록 티뮤지엄</li><li>점심: 갈치구이·갈치조림 또는 보말칼국수</li><li>낮잠 복귀</li><li>오후 선택: 모모쥬 / 제주항공우주박물관 / 수영장</li><li>저녁: 리조트 근처 해산물·흑돼지·포장 술상</li></ul></div></article>
+          <article class="day"><div class="badge d4">DAY 4<br/>화</div><div><h3>체크아웃 / 공항 복귀</h3><ul><li>조식 후 짐 정리</li><li>컨디션 좋으면 제주항공우주박물관 짧게</li><li>점심: 보말칼국수·고기국수·전복죽</li><li>13:00 전후 공항 도착 → 15:00 출발</li></ul></div></article>
+        </div>
+      </div>
+
+      <aside class="card span-4 notice">
+        <h2>운영 원칙</h2>
+        <div class="list">
+          <div class="item"><strong>낮잠은 일정의 중심</strong><span class="small">12:30~15:00 사이 방 복귀가 성공 확률을 높입니다.</span></div>
+          <div class="item"><strong>외부 관광은 월요일 오전 1개 권역</strong><span class="small">오설록 중심으로만 움직이는 게 안전합니다.</span></div>
+          <div class="item"><strong>저녁 술은 리조트 안/근처</strong><span class="small">운전 부담을 없애야 합니다.</span></div>
+          <div class="item"><strong>차량 확인 필수</strong><span class="small">성인 4명+아이 2명이라 5인승 1대는 불가 가능성이 큽니다.</span></div>
+        </div>
+      </aside>
+
+      <div class="card span-12">
+        <h2>이동 동선 인포그래픽</h2>
+        <p class="small">별도 제작한 지도형 인포그래픽입니다. 원본 PNG 파일: <code>jeju-shinhwa-family-route-infographic.png</code></p>
+        <img class="mapimg" src="jeju-shinhwa-family-route-infographic.png" alt="제주 신화월드 3박4일 동선 인포그래픽" />
+      </div>
+
+      <div id="food" class="card span-6">
+        <h2>식사 플랜</h2>
+        <table class="route">
+          <tr><th>날짜</th><th>식사</th><th>추천</th></tr>
+          <tr><td>토</td><td>점심</td><td>공항 근처 고기국수 + 돔베고기</td></tr>
+          <tr><td>토</td><td>저녁</td><td><b>화산 HWASAN</b> — 제주 돼지 BBQ + 불꽃놀이</td></tr>
+          <tr><td>일</td><td>점심</td><td>신화월드 내 김밥·한식·해물라면</td></tr>
+          <tr><td>일</td><td>저녁</td><td>흑돼지 — 신화돌담집 / 숙성도 중문점 후보</td></tr>
+          <tr><td>월</td><td>점심</td><td>갈치구이·갈치조림 — 춘심이네 본점 방향</td></tr>
+          <tr><td>월</td><td>저녁</td><td>리조트 근처 해산물·흑돼지·포장 술상</td></tr>
+          <tr><td>화</td><td>점심</td><td>보말칼국수 / 고기국수 / 전복죽</td></tr>
+        </table>
+      </div>
+
+      <div id="tour" class="card span-6">
+        <h2>관광 우선순위</h2>
+        <div class="list">
+          <div class="item"><strong>반드시 넣기</strong><span class="tag">화산+불꽃놀이</span><span class="tag">신화테마파크</span><span class="tag">신화워터파크</span><span class="tag">오설록</span></div>
+          <div class="item"><strong>컨디션 좋으면</strong><span class="tag">모모쥬</span><span class="tag">제주항공우주박물관</span></div>
+          <div class="item"><strong>굳이 안 넣어도 됨</strong><span class="tag">산방산</span><span class="tag">용머리해안</span><span class="tag">유리의성</span><span class="tag">자동차박물관</span></div>
+        </div>
+        <p class="small">신화테마파크 10:00~21:00 / 워터파크 10:00~20:00 / 모모쥬 10:00~19:00, 입장마감 18:00 / 신화 액티비티 10:00~18:00.</p>
+      </div>
+
+      <div id="hwasan" class="card span-12 ok">
+        <h2>토요일 저녁 변경사항: 화산 HWASAN + 불꽃놀이</h2>
+        <p><b>기존 토요일 저녁</b>은 고래라면·랜딩 다이닝 등 리조트 내부 가벼운 식사였으나, 현재는 <b>화산 HWASAN에서 제주 돼지 BBQ를 먹고 21:10 신화스퀘어 불꽃놀이를 보는 일정</b>으로 변경했습니다.</p>
+        <table class="route"><tr><th>시간</th><th>내용</th><th>확인사항</th></tr><tr><td>19:30~20:00</td><td>화산 입장</td><td>6명+아이의자 2개</td></tr><tr><td>20:00~21:00</td><td>제주 돼지 BBQ 식사</td><td>아이 먼저 먹일 메뉴 확인</td></tr><tr><td>21:10</td><td>신화스퀘어 라이팅쇼 & 불꽃놀이</td><td>“불꽃놀이 보이는 자리” 예약 확인</td></tr></table>
+        <p class="small">예약 문의 문구: “토요일 저녁 6명, 아이 2명 포함 예약하려고 합니다. 21:10 신화스퀘어 불꽃놀이가 보이는 자리로 가능한가요? 아이 의자 2개도 가능한지 확인 부탁드립니다.”</p>
+      </div>
+
+      <div id="videos" class="card span-12">
+        <h2>최근 1년 내 신화월드 아이 동반 가족 유튜브 참고 영상</h2>
+        <ol class="links">
+          <li><a href="https://www.youtube.com/watch?v=T21cgTj1IJw">12개월 아기랑 5월의 제주 여행기 02</a></li>
+          <li><a href="https://www.youtube.com/watch?v=58OnFTnRsQ0">13개월 아기와 제주도 여행</a></li>
+          <li><a href="https://www.youtube.com/watch?v=U8LjTUoPlcM">7개월 아이랑 제주여행 | 신화월드</a></li>
+          <li><a href="https://www.youtube.com/watch?v=EP5Ag4DRxm8">18개월 아기와 제주도 3박4일 ep.2</a></li>
+          <li><a href="https://www.youtube.com/watch?v=6_PxbN8wwP8">11개월 아기랑 2박3일 제주도여행</a></li>
+          <li><a href="https://www.youtube.com/watch?v=DfCqGP2lydE">아기와 3박4일 신화월드 완전 정복</a></li>
+          <li><a href="https://www.youtube.com/watch?v=_orU-TNOaH8">6개월 아기와 첫 제주도 가족여행</a></li>
+          <li><a href="https://www.youtube.com/watch?v=wdJbq5RRC0s">8개월 아기랑 제주도 여행기</a></li>
+          <li><a href="https://www.youtube.com/watch?v=i7jBAnxmq6I">돌아기랑 제주여행</a></li>
+          <li><a href="https://www.youtube.com/watch?v=ZvWdbKa-dn8">25개월 아가 | 신화월드 가봤니?</a></li>
+        </ol>
+        <p class="small">영상은 유튜브 검색 결과 기준이며, 제목·메타데이터상 아이 동반 신화월드 방문 영상 위주입니다.</p>
+      </div>
+
+      <div id="links" class="card span-12">
+        <h2>네이버 지도 링크 모음</h2>
+        <ul class="links">
+          <li><a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%20%EC%9E%90%EB%A7%A4%EA%B5%AD%EC%88%98">자매국수</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%20%EC%98%AC%EB%9E%98%EA%B5%AD%EC%88%98">올래국수</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%20%EC%82%BC%EB%AC%B4%EA%B5%AD%EC%88%98">삼무국수</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%EC%8B%A0%ED%99%94%EC%9B%94%EB%93%9C%20%ED%99%94%EC%82%B0">화산 HWASAN</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%EC%8B%A0%ED%99%94%EC%9B%94%EB%93%9C%20%EA%B3%A0%EB%9E%98%EB%9D%BC%EB%A9%B4">고래라면</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%EC%8B%A0%ED%99%94%EC%9B%94%EB%93%9C%20%EB%9E%9C%EB%94%A9%20%EB%8B%A4%EC%9D%B4%EB%8B%9D">랜딩 다이닝</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%8B%A0%ED%99%94%EB%8F%8C%EB%8B%B4%EC%A7%91%20%EC%A0%9C%EC%A3%BC%EC%8B%A0%ED%99%94%EC%9B%94%EB%93%9C%EC%A0%90">신화돌담집 제주신화월드점</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%88%99%EC%84%B1%EB%8F%84%20%EC%A4%91%EB%AC%B8%EC%A0%90">숙성도 중문점</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%20%EC%B6%98%EC%8B%AC%EC%9D%B4%EB%84%A4%20%EB%B3%B8%EC%A0%90">춘심이네 본점</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%98%A4%EC%84%A4%EB%A1%9D%20%ED%8B%B0%EB%AE%A4%EC%A7%80%EC%97%84">오설록 티뮤지엄</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%ED%95%AD%EA%B3%B5%EC%9A%B0%EC%A3%BC%EB%B0%95%EB%AC%BC%EA%B4%80">제주항공우주박물관</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%20%EC%9C%A0%EB%A6%AC%EC%9D%98%EC%84%B1">제주 유리의성</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%84%B8%EA%B3%84%EC%9E%90%EB%8F%99%EC%B0%A8%EC%A0%9C%EC%A3%BC%EB%B0%95%EB%AC%BC%EA%B4%80">세계자동차제주박물관</a></li>
+          <li><a href="https://map.naver.com/p/search/%EC%82%B0%EB%B0%A9%EC%82%B0">산방산</a></li>
+        </ul>
+      </div>
+
+      <div id="checklist" class="card span-6">
+        <h2>준비물 체크리스트</h2>
+        <div class="list">
+          <div class="item">카시트 2개 / 휴대용 유모차 2대</div><div class="item">방수기저귀 / 아쿠아슈즈 / 큰 타월</div><div class="item">여벌옷 / 젖은 옷 담을 비닐 / 보온 가운</div><div class="item">간식 / 빨대컵 / 해열제 / 체온계 / 밴드</div><div class="item">낮잠용 애착인형·담요</div>
+        </div>
+      </div>
+      <div class="card span-6 warn">
+        <h2>마지막 주의사항</h2>
+        <ul><li><b>화산 예약</b>: 불꽃놀이 보이는 자리와 아이의자 2개 확인</li><li><b>흑돼지 유명점</b>: 대기 길면 바로 대안으로 전환</li><li><b>비행 전 화요일</b>: 무리하지 말고 13:00 공항 도착 목표</li><li><b>차량</b>: 6명+짐+카시트면 7인승 이상 또는 차량 2대 권장</li></ul>
+      </div>
+    </section>
+    <p class="footer">작성 파일: jeju-shinhwa-family-trip-summary.html · 민감정보/자격증명은 포함하지 않음</p>
+  </div>
+</body>
+</html>
