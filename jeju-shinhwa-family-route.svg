@@ -23,9 +23,9 @@
   </defs>
   <rect width="1600" height="1050" rx="36" fill="url(#sea)"/>
   <text class="title" x="64" y="74">제주 신화월드 3박4일 이동 동선</text>
-  <text class="sub" x="66" y="112">서쪽·남서쪽 중심 일정 · 식사 미정 구간과 티켓 메모 반영</text>
+  <text class="sub" x="66" y="112">서쪽·남서쪽 중심 일정 · 조식 통일과 명희식당 반영</text>
   <rect x="1216" y="46" width="292" height="54" rx="27" fill="#1f2d3d" filter="url(#shadow)"/>
-  <text class="pill" x="1248" y="80">DAY 2/3 식사 미정 반영</text>
+  <text class="pill" x="1248" y="80">조식 통일 · DAY2 점심 확정</text>
 
   <text class="seaLabel" x="152" y="226">제주시 / 공항권</text>
   <text class="seaLabel" x="950" y="820">서귀포·중문권</text>
@@ -61,16 +61,16 @@
   <line x1="430" y1="596" x2="404" y2="620" stroke="#1f2d3d" stroke-width="3"/>
 
   <g transform="translate(565 748)">
-    <rect width="370" height="126" rx="22" fill="#f3e8ff" stroke="#1f2d3d" stroke-width="4"/>
+    <rect width="440" height="126" rx="22" fill="#f3e8ff" stroke="#1f2d3d" stroke-width="4"/>
     <circle cx="36" cy="36" r="21" fill="#7c3aed"/><text class="badge" x="30" y="42">3</text>
-    <text class="pinText" x="68" y="40">제주 신화월드</text><text class="pinSmall" x="68" y="68">숙소 · 테마파크 · 워터파크</text><text class="pinSmall" x="68" y="96">DAY 2 점심/저녁 미정</text>
+    <text class="pinText" x="68" y="40">제주 신화월드</text><text class="pinSmall" x="68" y="68">조식: 어른 편의점 / 아기 포장</text><text class="pinSmall" x="68" y="96">DAY 2 점심 명희식당 / 저녁 미정</text>
   </g>
   <line x1="672" y1="700" x2="700" y2="748" stroke="#1f2d3d" stroke-width="3"/>
 
   <g transform="translate(1015 258)">
     <rect width="330" height="120" rx="22" fill="#ecfdf5" stroke="#1f2d3d" stroke-width="4"/>
     <circle cx="34" cy="34" r="19" fill="#10b981"/><text class="badge" x="28" y="40">4</text>
-    <text class="pinText" x="64" y="38">유리바닥보트</text><text class="pinSmall" x="64" y="66">DAY 3 오전 외부 이동</text><text class="pinSmall" x="64" y="92">점심 초로 → 워터파크</text>
+    <text class="pinText" x="64" y="38">유리바닥보트</text><text class="pinSmall" x="64" y="66">DAY 3 오전 외부 이동</text><text class="pinSmall" x="64" y="92">조식 포장 → 초로 → 워터파크</text>
   </g>
   <line x1="1048" y1="370" x2="1058" y2="378" stroke="#1f2d3d" stroke-width="3"/>
 
@@ -89,8 +89,8 @@
   </g>
 
   <g transform="translate(1130 140)">
-    <rect width="330" height="74" rx="20" fill="#1f2d3d"/>
+    <rect width="360" height="74" rx="20" fill="#1f2d3d"/>
     <text class="pill" x="26" y="32">현재 미정</text>
-    <text class="pill" x="26" y="56">DAY 2 점심·저녁 / DAY 3 저녁</text>
+    <text class="pill" x="26" y="56">DAY 2 저녁 / DAY 3 저녁</text>
   </g>
 </svg>
