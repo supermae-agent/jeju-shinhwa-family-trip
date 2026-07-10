@@ -31,7 +31,13 @@
   <path d="M135 370 Q160 345 195 370 T255 370" fill="none" stroke="#9ad4ff" stroke-width="7" stroke-linecap="round" opacity=".8"/>
   <path d="M700 255 Q725 230 760 255 T820 255" fill="none" stroke="#9ad4ff" stroke-width="7" stroke-linecap="round" opacity=".8"/>
   <path d="M735 690 Q760 665 795 690 T855 690" fill="none" stroke="#9ad4ff" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  <path d="M610 345 L360 515 L450 565 L610 585 L610 345" fill="none" stroke="#f97316" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 18" opacity="0.55"/>
+  <path d="M450 565 C425 530 420 490 450 455 C485 415 545 420 575 455 C610 500 585 540 450 565" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.5"/>
 
+  <rect x="638" y="312" width="200" height="64" rx="14" fill="#ffffff" opacity="0.88"/>
+  <rect x="248" y="450" width="210" height="66" rx="14" fill="#ffffff" opacity="0.88"/>
+  <rect x="455" y="565" width="360" height="66" rx="14" fill="#ffffff" opacity="0.88"/>
+  <rect x="638" y="562" width="230" height="66" rx="14" fill="#ffffff" opacity="0.88"/>
   <circle cx="610" cy="345" r="26" fill="#ef4444" stroke="#1f2d3d" stroke-width="4"/>
   <text class="day" x="602" y="354">1</text>
   <text class="label" x="645" y="337">제주공항</text>
@@ -52,8 +58,6 @@
   <text class="label" x="645" y="588">뽀로로/송도옥</text>
   <text class="small" x="645" y="614">DAY 4 오전·점심</text>
 
-  <path d="M610 345 L360 515 L450 565 L610 585 L610 345" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 16"/>
-  <path d="M450 565 C425 530 420 490 450 455 C485 415 545 420 575 455 C610 500 585 540 450 565" fill="none" stroke="#22c55e" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 14"/>
 
   <rect x="80" y="182" width="270" height="84" rx="18" fill="#1f2d3d" filter="url(#shadow)"/>
   <text class="pill" x="105" y="216">핵심 전략</text>
