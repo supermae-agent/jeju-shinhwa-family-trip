@@ -1,95 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920" role="img" aria-label="제주 신화월드 3박4일 이동 동선">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-label="제주 신화월드 3박4일 이동 동선 상세 지도">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f7fbff"/>
-      <stop offset="1" stop-color="#fff7ea"/>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f6ff"/>
+      <stop offset="1" stop-color="#fff4db"/>
     </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1d2d3f" flood-opacity="0.18"/>
+    <linearGradient id="island" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dff5df"/>
+      <stop offset="0.55" stop-color="#bfe6c4"/>
+      <stop offset="1" stop-color="#f5e0ad"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#1f2d3d" flood-opacity="0.18"/>
     </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#f97316"/>
+    </marker>
     <style>
       text{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;fill:#203043}
-      .title{font-size:48px;font-weight:900;letter-spacing:-1.5px}
-      .sub{font-size:18px;font-weight:700;fill:#64748b}
-      .day{font-size:22px;font-weight:900;fill:#fff}
-      .label{font-size:22px;font-weight:900}
-      .small{font-size:15px;font-weight:700;fill:#475569}
-      .tiny{font-size:13px;font-weight:700;fill:#64748b}
-      .pill{font-size:16px;font-weight:900;fill:#fff}
-      .cardTitle{font-size:24px;font-weight:900}
-      .cardText{font-size:17px;font-weight:700;fill:#334155}
+      .title{font-size:46px;font-weight:900;letter-spacing:-1.4px}.sub{font-size:18px;font-weight:800;fill:#607083}
+      .seaLabel{font-size:18px;font-weight:900;fill:#5d87a8;letter-spacing:.12em}.region{font-size:16px;font-weight:900;fill:#5b6b7c}.road{fill:none;stroke:#ffffff;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;opacity:.84}.road2{fill:none;stroke:#95a88b;stroke-width:3;stroke-linecap:round;stroke-dasharray:6 10;opacity:.72}.route{fill:none;stroke:#f97316;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1 17;marker-end:url(#arrow)}.route2{fill:none;stroke:#22c55e;stroke-width:7;stroke-linecap:round;stroke-dasharray:1 16;marker-end:url(#arrow)}.pinText{font-size:20px;font-weight:900}.pinSmall{font-size:14px;font-weight:800;fill:#596879}.badge{font-size:16px;font-weight:900;fill:#fff}.cardTitle{font-size:22px;font-weight:900}.cardText{font-size:16px;font-weight:800;fill:#334155}.tiny{font-size:13px;font-weight:800;fill:#64748b}.pill{font-size:16px;font-weight:900;fill:#fff}
     </style>
   </defs>
-  <rect x="0" y="0" width="1400" height="920" rx="34" fill="url(#bg)"/>
-  <text class="title" x="58" y="76">제주 신화월드 3박4일 이동 동선</text>
-  <text class="sub" x="58" y="112">7/11(토) 11:25 제주 도착 → 7/14(화) 17:35 제주 출발 · 여행 일정과 동기화된 현재 버전</text>
-  <rect x="1070" y="50" width="255" height="48" rx="24" fill="#1f2d3d" filter="url(#shadow)"/>
-  <text class="pill" x="1100" y="81">식사·이동 링크 반영</text>
+  <rect width="1600" height="1050" rx="36" fill="url(#sea)"/>
+  <text class="title" x="64" y="74">제주 신화월드 3박4일 이동 동선</text>
+  <text class="sub" x="66" y="112">서쪽·남서쪽 중심 일정 · 식사 미정 구간과 티켓 메모 반영</text>
+  <rect x="1216" y="46" width="292" height="54" rx="27" fill="#1f2d3d" filter="url(#shadow)"/>
+  <text class="pill" x="1248" y="80">DAY 2/3 식사 미정 반영</text>
 
-  <rect x="54" y="150" width="850" height="640" rx="26" fill="#ffffff" stroke="#1f2d3d" stroke-width="5" filter="url(#shadow)"/>
-  <ellipse cx="475" cy="485" rx="320" ry="220" fill="#dff4e5" stroke="#1f2d3d" stroke-width="5"/>
-  <path d="M135 370 Q160 345 195 370 T255 370" fill="none" stroke="#9ad4ff" stroke-width="7" stroke-linecap="round" opacity=".8"/>
-  <path d="M700 255 Q725 230 760 255 T820 255" fill="none" stroke="#9ad4ff" stroke-width="7" stroke-linecap="round" opacity=".8"/>
-  <path d="M735 690 Q760 665 795 690 T855 690" fill="none" stroke="#9ad4ff" stroke-width="7" stroke-linecap="round" opacity=".8"/>
-  <path d="M610 345 L360 515 L450 565 L610 585 L610 345" fill="none" stroke="#f97316" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 18" opacity="0.55"/>
-  <path d="M450 565 C425 530 420 490 450 455 C485 415 545 420 575 455 C610 500 585 540 450 565" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.5"/>
+  <text class="seaLabel" x="152" y="226">제주시 / 공항권</text>
+  <text class="seaLabel" x="950" y="820">서귀포·중문권</text>
+  <text class="region" x="740" y="486">한라산</text>
 
-  <rect x="638" y="312" width="200" height="64" rx="14" fill="#ffffff" opacity="0.88"/>
-  <rect x="248" y="450" width="210" height="66" rx="14" fill="#ffffff" opacity="0.88"/>
-  <rect x="455" y="565" width="360" height="66" rx="14" fill="#ffffff" opacity="0.88"/>
-  <rect x="638" y="562" width="230" height="66" rx="14" fill="#ffffff" opacity="0.88"/>
-  <circle cx="610" cy="345" r="26" fill="#ef4444" stroke="#1f2d3d" stroke-width="4"/>
-  <text class="day" x="602" y="354">1</text>
-  <text class="label" x="645" y="337">제주공항</text>
-  <text class="small" x="645" y="363">도착/출발 · 렌트카</text>
+  <path d="M170 438 C220 318 360 258 525 236 C690 212 840 228 1005 256 C1180 286 1320 360 1370 462 C1424 574 1370 682 1240 750 C1110 820 915 840 735 820 C520 796 360 742 242 650 C160 586 132 506 170 438 Z" fill="url(#island)" stroke="#1f2d3d" stroke-width="5" filter="url(#shadow)"/>
+  <path d="M720 430 C770 386 846 396 886 448 C932 508 884 582 806 590 C724 598 666 520 720 430 Z" fill="#8bc681" stroke="#618a5d" stroke-width="3" opacity=".72"/>
+  <path class="road" d="M314 382 C450 330 625 312 810 326 C1000 340 1160 392 1250 482 C1164 570 1018 620 846 646 C662 676 488 638 360 560 C292 520 282 454 314 382 Z"/>
+  <path class="road2" d="M322 542 C510 548 700 548 900 572 C1040 588 1168 640 1248 704"/>
+  <path class="road2" d="M502 694 C560 610 650 552 808 508 C964 464 1082 414 1208 362"/>
 
-  <circle cx="360" cy="515" r="26" fill="#f59e0b" stroke="#1f2d3d" stroke-width="4"/>
-  <text class="day" x="352" y="524">2</text>
-  <text class="label" x="278" y="478">제주미담/오설록</text>
-  <text class="small" x="260" y="502">DAY 1 점심 후</text>
+  <!-- Route first, labels later: no text overlap -->
+  <path class="route" d="M356 336 C330 410 332 500 430 596 C504 668 580 700 672 700"/>
+  <path class="route" d="M672 700 C616 642 596 566 646 482 C710 376 874 340 1048 370"/>
+  <path class="route" d="M1048 370 C910 450 772 566 672 700"/>
+  <path class="route" d="M672 700 C874 742 1068 696 1200 626"/>
+  <path class="route" d="M1200 626 C914 698 610 662 356 336"/>
+  <path class="route2" d="M672 700 C646 662 642 620 668 578 C704 520 780 512 822 558 C870 610 812 682 672 700"/>
 
-  <circle cx="450" cy="565" r="30" fill="#7c3aed" stroke="#1f2d3d" stroke-width="4"/>
-  <text class="day" x="442" y="575">3</text>
-  <text class="label" x="462" y="592">제주 신화월드</text>
-  <text class="small" x="462" y="618">숙소 · 테마파크 · 워터파크 · 모모쥬</text>
+  <!-- Label cards -->
+  <g transform="translate(220 210)">
+    <rect width="280" height="112" rx="22" fill="#ffffff" stroke="#1f2d3d" stroke-width="4"/>
+    <circle cx="34" cy="34" r="19" fill="#ef4444"/><text class="badge" x="28" y="40">1</text>
+    <text class="pinText" x="64" y="38">제주공항</text><text class="pinSmall" x="64" y="66">11:25 도착 · 쏘카 렌트</text><text class="pinSmall" x="64" y="91">DAY 4 17:35 출발</text>
+  </g>
+  <line x1="356" y1="336" x2="330" y2="322" stroke="#1f2d3d" stroke-width="3"/>
 
-  <circle cx="610" cy="585" r="26" fill="#10b981" stroke="#1f2d3d" stroke-width="4"/>
-  <text class="day" x="602" y="594">4</text>
-  <text class="label" x="645" y="588">뽀로로/송도옥</text>
-  <text class="small" x="645" y="614">DAY 4 오전·점심</text>
+  <g transform="translate(252 620)">
+    <rect width="330" height="124" rx="22" fill="#fff7ed" stroke="#1f2d3d" stroke-width="4"/>
+    <circle cx="34" cy="34" r="19" fill="#f59e0b"/><text class="badge" x="28" y="40">2</text>
+    <text class="pinText" x="64" y="38">제주미담 → 오설록</text><text class="pinSmall" x="64" y="66">DAY 1 점심 · 녹차밭/카페</text><text class="pinSmall" x="64" y="92">이후 신화월드 체크인</text>
+  </g>
+  <line x1="430" y1="596" x2="404" y2="620" stroke="#1f2d3d" stroke-width="3"/>
 
+  <g transform="translate(565 748)">
+    <rect width="370" height="126" rx="22" fill="#f3e8ff" stroke="#1f2d3d" stroke-width="4"/>
+    <circle cx="36" cy="36" r="21" fill="#7c3aed"/><text class="badge" x="30" y="42">3</text>
+    <text class="pinText" x="68" y="40">제주 신화월드</text><text class="pinSmall" x="68" y="68">숙소 · 테마파크 · 워터파크</text><text class="pinSmall" x="68" y="96">DAY 2 점심/저녁 미정</text>
+  </g>
+  <line x1="672" y1="700" x2="700" y2="748" stroke="#1f2d3d" stroke-width="3"/>
 
-  <rect x="80" y="182" width="270" height="84" rx="18" fill="#1f2d3d" filter="url(#shadow)"/>
-  <text class="pill" x="105" y="216">핵심 전략</text>
-  <text class="pill" x="105" y="246">외부 이동은 DAY 1·3·4</text>
+  <g transform="translate(1015 258)">
+    <rect width="330" height="120" rx="22" fill="#ecfdf5" stroke="#1f2d3d" stroke-width="4"/>
+    <circle cx="34" cy="34" r="19" fill="#10b981"/><text class="badge" x="28" y="40">4</text>
+    <text class="pinText" x="64" y="38">유리바닥보트</text><text class="pinSmall" x="64" y="66">DAY 3 오전 외부 이동</text><text class="pinSmall" x="64" y="92">점심 초로 → 워터파크</text>
+  </g>
+  <line x1="1048" y1="370" x2="1058" y2="378" stroke="#1f2d3d" stroke-width="3"/>
 
-  <rect x="1020" y="150" width="315" height="142" rx="22" fill="#fff7ed" stroke="#1f2d3d" stroke-width="4"/>
-  <text class="cardTitle" x="1046" y="190">🟧 DAY 1 토 · 도착/식사/오설록</text>
-  <text class="cardText" x="1046" y="226">공항 → 제주미담 → 오설록 → 신화월드</text>
-  <text class="tiny" x="1046" y="258">저녁: 화산 제주신화월드점 / 대안 풍로</text>
+  <g transform="translate(1130 638)">
+    <rect width="330" height="124" rx="22" fill="#fefce8" stroke="#1f2d3d" stroke-width="4"/>
+    <circle cx="34" cy="34" r="19" fill="#eab308"/><text class="badge" x="28" y="40">5</text>
+    <text class="pinText" x="64" y="38">뽀로로 → 송도옥</text><text class="pinSmall" x="64" y="66">DAY 4 티켓은 쿠팡 비교</text><text class="pinSmall" x="64" y="92">15:30 공항 도착 목표</text>
+  </g>
+  <line x1="1200" y1="626" x2="1194" y2="638" stroke="#1f2d3d" stroke-width="3"/>
 
-  <rect x="1020" y="320" width="315" height="142" rx="22" fill="#eff6ff" stroke="#1f2d3d" stroke-width="4"/>
-  <text class="cardTitle" x="1046" y="360">🟦 DAY 2 일 · 테마/워터</text>
-  <text class="cardText" x="1046" y="396">오전 신화테마파크</text>
-  <text class="cardText" x="1046" y="425">오후 신화워터파크</text>
-  <text class="tiny" x="1046" y="446">리조트 내부 이동만</text>
+  <g transform="translate(74 790)">
+    <rect width="412" height="130" rx="22" fill="#ffffff" stroke="#1f2d3d" stroke-width="3"/>
+    <text class="cardTitle" x="24" y="40">읽는 법</text>
+    <circle cx="32" cy="70" r="7" fill="#f97316"/><text class="tiny" x="48" y="75">주황 점선: 실제 외부 이동 동선</text>
+    <circle cx="32" cy="100" r="7" fill="#22c55e"/><text class="tiny" x="48" y="105">초록 점선: 신화월드 내부 반복 이동</text>
+  </g>
 
-  <rect x="1020" y="490" width="315" height="142" rx="22" fill="#f0fdf4" stroke="#1f2d3d" stroke-width="4"/>
-  <text class="cardTitle" x="1046" y="530">🟩 DAY 3 월 · 보트/워터</text>
-  <text class="cardText" x="1046" y="566">오전 유리바닥보트</text>
-  <text class="cardText" x="1046" y="595">점심 초로 · 오후 신화워터파크</text>
-  <text class="tiny" x="1046" y="616">외부 이동 후 리조트 복귀</text>
-
-  <rect x="1020" y="660" width="315" height="142" rx="22" fill="#fefce8" stroke="#1f2d3d" stroke-width="4"/>
-  <text class="cardTitle" x="1046" y="700">🟨 DAY 4 화 · 뽀로로/공항</text>
-  <text class="cardText" x="1046" y="736">체크아웃 → 뽀로로 테마파크</text>
-  <text class="cardText" x="1046" y="765">점심 송도옥 → 15:30 공항</text>
-  <text class="tiny" x="1046" y="786">대안 성심조림 · 17:35 제주공항 출발</text>
-
-  <rect x="80" y="805" width="520" height="70" rx="18" fill="#fff" stroke="#1f2d3d" stroke-width="3"/>
-  <circle cx="110" cy="830" r="8" fill="#ef4444"/><text class="tiny" x="126" y="835">공항</text>
-  <circle cx="190" cy="830" r="8" fill="#f59e0b"/><text class="tiny" x="206" y="835">제주미담/오설록</text>
-  <circle cx="290" cy="830" r="8" fill="#7c3aed"/><text class="tiny" x="306" y="835">신화월드</text>
-  <circle cx="430" cy="830" r="8" fill="#10b981"/><text class="tiny" x="446" y="835">뽀로로/송도옥</text>
-  <text class="tiny" x="105" y="862">점선: 실제 운전 동선 / 녹색 점선: 리조트 내부 반복 이동</text>
+  <g transform="translate(1130 140)">
+    <rect width="330" height="74" rx="20" fill="#1f2d3d"/>
+    <text class="pill" x="26" y="32">현재 미정</text>
+    <text class="pill" x="26" y="56">DAY 2 점심·저녁 / DAY 3 저녁</text>
+  </g>
 </svg>
