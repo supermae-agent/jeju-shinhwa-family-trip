@@ -26,12 +26,11 @@
     .span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-6{grid-column:span 6}.span-4{grid-column:span 4}
     h2{margin:0 0 14px;font-size:25px;letter-spacing:-.03em} h3{margin:0 0 8px;font-size:18px}.small{font-size:13px;color:var(--muted)}
     .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi div{border-radius:18px;padding:15px;background:#fff;border:1px solid var(--line)}.kpi b{display:block;font-size:22px;color:var(--orange)}.kpi span{font-size:13px;color:var(--muted);font-weight:700}
-    .timeline{display:grid;gap:14px}.day{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start;padding:16px;border-radius:20px;background:#fff;border:1px solid var(--line)}.badge{height:54px;border-radius:18px;display:grid;place-items:center;color:white;font-weight:900;box-shadow:inset 0 -8px 18px rgba(0,0,0,.12)}.d1{background:var(--orange)}.d2{background:var(--blue)}.d3{background:var(--green)}.d4{background:var(--yellow);color:#2c2417}.day ul{margin:8px 0 0;padding-left:18px}.day li{margin:4px 0}
-    .route{width:100%;border-collapse:separate;border-spacing:0 10px}.route th{text-align:left;color:var(--muted);font-size:12px}.route td{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px}.route td:first-child{border-left:1px solid var(--line);border-radius:14px 0 0 14px;font-weight:800}.route td:last-child{border-right:1px solid var(--line);border-radius:0 14px 14px 0}
+    .daily-board{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.daily-card{display:grid;grid-template-columns:230px 1fr;gap:18px;align-items:center;padding:18px;border-radius:26px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 24px rgba(54,42,24,.06)}.clock-face{position:relative;width:218px;aspect-ratio:1;border-radius:50%;margin:auto;background:radial-gradient(circle at center,#fffaf1 0 26%,transparent 27%),conic-gradient(from -90deg,#f9d9b5 0 23%,#dbead9 23% 48%,#d6e5f5 48% 72%,#f5e3a6 72% 100%);border:9px solid #fff;box-shadow:inset 0 0 0 1px var(--line),0 12px 26px rgba(54,42,24,.12)}.clock-face:before,.clock-face:after{content:"";position:absolute;left:50%;top:50%;transform-origin:left center;background:#3b342a;border-radius:999px}.clock-face:before{width:64px;height:4px;transform:rotate(-35deg)}.clock-face:after{width:48px;height:4px;transform:rotate(-105deg)}.clock-center{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;text-align:center;background:#243b2f;color:#fff;font-weight:900;font-size:13px;line-height:1.05;z-index:2}.clock-slot{position:absolute;padding:5px 7px;border-radius:999px;background:rgba(255,250,241,.95);border:1px solid rgba(90,70,42,.18);font-size:11px;font-weight:900;color:#3e3325;box-shadow:0 5px 12px rgba(54,42,24,.08);white-space:nowrap}.slot-top{top:10px;left:50%;transform:translateX(-50%)}.slot-right{right:-2px;top:50%;transform:translateY(-50%)}.slot-bottom{bottom:10px;left:50%;transform:translateX(-50%)}.slot-left{left:-2px;top:50%;transform:translateY(-50%)}.daily-info h3{margin:0 0 6px;font-size:20px}.daily-sub{color:var(--muted);font-size:13px;font-weight:700;margin-bottom:10px}.time-list{display:grid;gap:8px}.time-row{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:9px 10px;border-radius:14px;background:#fffaf1;border:1px solid #eee0c8}.time-row b{color:var(--green);font-size:13px}.time-row span{font-size:14px}.meal{color:#a64b20;font-weight:900}.route{width:100%;border-collapse:separate;border-spacing:0 10px}.route th{text-align:left;color:var(--muted);font-size:12px}.route td{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px}.route td:first-child{border-left:1px solid var(--line);border-radius:14px 0 0 14px;font-weight:800}.route td:last-child{border-right:1px solid var(--line);border-radius:0 14px 14px 0}
     .list{display:grid;gap:10px}.item{padding:14px;border-radius:17px;background:#fff;border:1px solid var(--line)}.item strong{display:block}.tag{display:inline-block;margin:4px 6px 0 0;padding:4px 8px;border-radius:999px;background:#f1e4ce;color:#5b4a32;font-size:12px;font-weight:800}
     .links{columns:2;column-gap:28px}.links li{break-inside:avoid;margin:0 0 8px}.notice{border-left:5px solid var(--orange);background:#fff4e8}.ok{border-left:5px solid var(--green)}.warn{border-left:5px solid var(--red)}
     .mapimg{width:100%;border-radius:18px;border:1px solid var(--line);background:#fff}.footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
-    @media(max-width:900px){.span-8,.span-6,.span-4{grid-column:span 12}.kpi{grid-template-columns:repeat(2,1fr)}.day{grid-template-columns:1fr}.links{columns:1}.hero h1{font-size:32px}.nav{border-radius:22px}.nav a{font-size:12px}}
+    @media(max-width:900px){.span-8,.span-6,.span-4{grid-column:span 12}.kpi{grid-template-columns:repeat(2,1fr)}.daily-board{grid-template-columns:1fr}.daily-card{grid-template-columns:1fr}.links{columns:1}.hero h1{font-size:32px}.nav{border-radius:22px}.nav a{font-size:12px}}
     @media print{body{background:white}.nav{display:none}.card,.hero{box-shadow:none}.wrap{max-width:none}.hero{break-inside:avoid}.card{break-inside:avoid}}
   </style>
 </head>
@@ -47,7 +46,7 @@
     </section>
 
     <nav class="nav">
-      <a href="#plan">일정</a><a href="#food">맛집</a><a href="#tour">관광</a><a href="#hwasan">화산+불꽃놀이</a><a href="#videos">유튜브</a><a href="#links">지도 링크</a><a href="#checklist">체크리스트</a>
+      <a href="#plan">여행 일정</a><a href="#tour">관광·Backlog</a><a href="#hwasan">화산+불꽃놀이</a><a href="#videos">유튜브</a><a href="#links">지도 링크</a><a href="#checklist">체크리스트</a>
     </nav>
 
     <section class="grid">
@@ -60,25 +59,28 @@
         </div>
       </div>
 
-      <div id="plan" class="card span-8">
-        <h2>최종 일정 요약</h2>
-        <div class="timeline">
-          <article class="day"><div class="badge d1">DAY 1<br/>토</div><div><h3>도착 / 적응 / 화산 BBQ</h3><ul><li>11:00 제주공항 도착 → 렌트카·카시트 확인</li><li>공항 근처 고기국수 점심 후 신화월드 이동</li><li>체크인·낮잠·리조트 산책</li><li><b>19:30~20:00 화산 HWASAN 입장 → 21:10 신화스퀘어 불꽃놀이</b></li></ul></div></article>
-          <article class="day"><div class="badge d2">DAY 2<br/>일</div><div><h3>신화월드 풀데이</h3><ul><li>오전: 신화테마파크</li><li>점심: 리조트 내 빠른 식사</li><li>13:00~15:00 낮잠</li><li>오후: 신화워터파크 / 수영장</li><li>저녁: 흑돼지 또는 리조트 근처 식사</li></ul></div></article>
-          <article class="day"><div class="badge d3">DAY 3<br/>월</div><div><h3>오설록 권역 외부 관광</h3><ul><li>오전: 오설록 티뮤지엄</li><li>점심: 갈치구이·갈치조림 또는 보말칼국수</li><li>낮잠 복귀</li><li>오후 선택: 모모쥬 / 제주항공우주박물관 / 수영장</li><li>저녁: 리조트 근처 해산물·흑돼지·포장 술상</li></ul></div></article>
-          <article class="day"><div class="badge d4">DAY 4<br/>화</div><div><h3>체크아웃 / 공항 복귀</h3><ul><li>조식 후 짐 정리</li><li>컨디션 좋으면 제주항공우주박물관 짧게</li><li>점심: 보말칼국수·고기국수·전복죽</li><li>13:00 전후 공항 도착 → 15:00 출발</li></ul></div></article>
+      <div id="plan" class="card span-12">
+        <h2>여행 일정</h2>
+        <p class="small">식사와 이동을 하루 계획표 안에 합쳤습니다. 동그란 시계는 큰 흐름, 오른쪽 타임테이블은 실제 실행 순서입니다.</p>
+        <div class="daily-board">
+          <article class="daily-card">
+            <div class="clock-face"><div class="clock-center">DAY 1<br/>토</div><span class="clock-slot slot-top">11:00 공항</span><span class="clock-slot slot-right">13:30 오설록</span><span class="clock-slot slot-bottom">19:30 화산</span><span class="clock-slot slot-left">15:30 낮잠</span></div>
+            <div class="daily-info"><h3>도착 / 오설록 / 화산 BBQ</h3><div class="daily-sub">공항 도착 후 바로 무리하지 않고, 점심 뒤 오설록을 짧고 선명하게 방문합니다.</div><div class="time-list"><div class="time-row"><b>11:00</b><span>제주공항 도착 → 렌트카·카시트 확인</span></div><div class="time-row"><b>12:00</b><span class="meal">점심: 공항 근처 고기국수 + 돔베고기</span></div><div class="time-row"><b>13:30</b><span>오설록: 녹차밭 사진 → 티뮤지엄 구경 → 카페 메뉴 → 기념품샵 순서</span></div><div class="time-row"><b>15:30</b><span>신화월드 이동 → 체크인·낮잠·리조트 산책</span></div><div class="time-row"><b>19:30</b><span class="meal">저녁: 화산 HWASAN 제주 돼지 BBQ → 21:10 신화스퀘어 불꽃놀이</span></div></div></div>
+          </article>
+          <article class="daily-card">
+            <div class="clock-face"><div class="clock-center">DAY 2<br/>일</div><span class="clock-slot slot-top">10:00 테마</span><span class="clock-slot slot-right">12:00 점심</span><span class="clock-slot slot-bottom">15:30 물놀이</span><span class="clock-slot slot-left">13:00 낮잠</span></div>
+            <div class="daily-info"><h3>신화월드 풀데이</h3><div class="daily-sub">이날은 리조트 안에서 만족도를 뽑고, 이동 피로를 줄이는 날입니다.</div><div class="time-list"><div class="time-row"><b>09:00</b><span>조식·아이 컨디션 확인</span></div><div class="time-row"><b>10:00</b><span>신화테마파크</span></div><div class="time-row"><b>12:00</b><span class="meal">점심: 리조트 내 김밥·한식·해물라면 등 빠른 식사</span></div><div class="time-row"><b>13:00</b><span>방 복귀 낮잠</span></div><div class="time-row"><b>15:30</b><span>신화워터파크 / 수영장</span></div><div class="time-row"><b>18:30</b><span class="meal">저녁: 흑돼지 — 신화돌담집 / 숙성도 중문점 후보</span></div></div></div>
+          </article>
+          <article class="daily-card">
+            <div class="clock-face"><div class="clock-center">DAY 3<br/>월</div><span class="clock-slot slot-top">10:00 선택</span><span class="clock-slot slot-right">12:00 점심</span><span class="clock-slot slot-bottom">18:30 저녁</span><span class="clock-slot slot-left">13:00 낮잠</span></div>
+            <div class="daily-info"><h3>가벼운 외부 선택 / 회복</h3><div class="daily-sub">DAY 1에 오설록을 넣었으니, 월요일은 컨디션에 따라 한 곳만 선택합니다.</div><div class="time-list"><div class="time-row"><b>10:00</b><span>선택: 모모쥬 / 제주항공우주박물관 / 점보빌리지 13:00 공연 준비 중 1개</span></div><div class="time-row"><b>12:00</b><span class="meal">점심: 갈치구이·갈치조림 또는 보말칼국수</span></div><div class="time-row"><b>13:00</b><span>방 복귀 낮잠</span></div><div class="time-row"><b>15:00</b><span>선택: 뽀로로파크 오후권 또는 수영장 — 무리하면 바로 리조트 휴식</span></div><div class="time-row"><b>18:30</b><span class="meal">저녁: 리조트 근처 해산물·흑돼지·포장 술상 / Backlog 맛집 비교</span></div></div></div>
+          </article>
+          <article class="daily-card">
+            <div class="clock-face"><div class="clock-center">DAY 4<br/>화</div><span class="clock-slot slot-top">09:00 정리</span><span class="clock-slot slot-right">11:00 짧게</span><span class="clock-slot slot-bottom">15:00 출발</span><span class="clock-slot slot-left">13:00 공항</span></div>
+            <div class="daily-info"><h3>체크아웃 / 공항 복귀</h3><div class="daily-sub">마지막 날은 변수를 줄이고 공항 도착 시간을 지키는 쪽이 안전합니다.</div><div class="time-list"><div class="time-row"><b>09:00</b><span>조식 후 짐 정리</span></div><div class="time-row"><b>11:00</b><span>컨디션 좋으면 제주항공우주박물관 짧게</span></div><div class="time-row"><b>12:00</b><span class="meal">점심: 보말칼국수 / 고기국수 / 전복죽</span></div><div class="time-row"><b>13:00</b><span>공항 도착 목표</span></div><div class="time-row"><b>15:00</b><span>제주공항 출발</span></div></div></div>
+          </article>
         </div>
       </div>
-
-      <aside class="card span-4 notice">
-        <h2>운영 원칙</h2>
-        <div class="list">
-          <div class="item"><strong>낮잠은 일정의 중심</strong><span class="small">12:30~15:00 사이 방 복귀가 성공 확률을 높입니다.</span></div>
-          <div class="item"><strong>외부 관광은 월요일 오전 1개 권역</strong><span class="small">오설록 중심으로만 움직이는 게 안전합니다.</span></div>
-          <div class="item"><strong>저녁 술은 리조트 안/근처</strong><span class="small">운전 부담을 없애야 합니다.</span></div>
-          <div class="item"><strong>차량 확인 필수</strong><span class="small">성인 4명+아이 2명이라 5인승 1대는 불가 가능성이 큽니다.</span></div>
-        </div>
-      </aside>
 
       <div class="card span-12">
         <h2>이동 동선 인포그래픽</h2>
@@ -86,20 +88,6 @@
         <img class="mapimg" src="jeju-shinhwa-family-route-infographic.png" alt="제주 신화월드 3박4일 동선 인포그래픽" />
       </div>
 
-      <div id="food" class="card span-6">
-        <h2>식사 플랜</h2>
-        <table class="route">
-          <tr><th>날짜</th><th>식사</th><th>추천</th></tr>
-          <tr><td>토</td><td>점심</td><td>공항 근처 고기국수 + 돔베고기</td></tr>
-          <tr><td>토</td><td>저녁</td><td><b>화산 HWASAN</b> — 제주 돼지 BBQ + 불꽃놀이</td></tr>
-          <tr><td>일</td><td>점심</td><td>신화월드 내 김밥·한식·해물라면</td></tr>
-          <tr><td>일</td><td>저녁</td><td>흑돼지 — 신화돌담집 / 숙성도 중문점 후보</td></tr>
-          <tr><td>월</td><td>점심</td><td>갈치구이·갈치조림 — 춘심이네 본점 방향</td></tr>
-          <tr><td>월</td><td>저녁</td><td>리조트 근처 해산물·흑돼지·포장 술상</td></tr>
-          <tr><td>Backlog</td><td>맛집 후보</td><td><b>풍로 신화월드</b> / <b>제주전복치킨 신화월드</b> / <b>제주고로 무릉 본점</b> — 저녁·포장·대기시간 기준으로 추가 검토</td></tr>
-          <tr><td>화</td><td>점심</td><td>보말칼국수 / 고기국수 / 전복죽</td></tr>
-        </table>
-      </div>
 
       <div id="tour" class="card span-6">
         <h2>관광 우선순위</h2>
@@ -168,9 +156,18 @@
           <div class="item">카시트 2개 / 휴대용 유모차 2대</div><div class="item">방수기저귀 / 아쿠아슈즈 / 큰 타월</div><div class="item">여벌옷 / 젖은 옷 담을 비닐 / 보온 가운</div><div class="item">간식 / 빨대컵 / 해열제 / 체온계 / 밴드</div><div class="item">낮잠용 애착인형·담요</div>
         </div>
       </div>
+      <div class="card span-6 notice">
+        <h2>운영 원칙</h2>
+        <div class="list">
+          <div class="item"><strong>낮잠은 일정의 중심</strong><span class="small">12:30~15:00 사이 방 복귀가 성공 확률을 높입니다.</span></div>
+          <div class="item"><strong>외부 관광은 하루 1개만</strong><span class="small">오설록은 DAY 1로 옮겼고, 이후 외부 일정은 컨디션에 따라 하나만 선택합니다.</span></div>
+          <div class="item"><strong>저녁 술은 리조트 안/근처</strong><span class="small">운전 부담을 없애야 합니다.</span></div>
+          <div class="item"><strong>차량 확인 필수</strong><span class="small">성인 4명+아이 2명이라 5인승 1대는 불가 가능성이 큽니다.</span></div>
+        </div>
+      </div>
       <div class="card span-6 warn">
         <h2>마지막 주의사항</h2>
-        <ul><li><b>화산 예약</b>: 불꽃놀이 보이는 자리와 아이의자 2개 확인</li><li><b>흑돼지 유명점</b>: 대기 길면 바로 대안으로 전환</li><li><b>비행 전 화요일</b>: 무리하지 말고 13:00 공항 도착 목표</li><li><b>차량</b>: 6명+짐+카시트면 7인승 이상 또는 차량 2대 권장</li></ul>
+        <ul><li><b>화산 예약</b>: 불꽃놀이 보이는 자리와 아이의자 2개 확인</li><li><b>흑돼지·Backlog 맛집</b>: 대기 길면 바로 포장/리조트 식사로 전환</li><li><b>비행 전 화요일</b>: 무리하지 말고 13:00 공항 도착 목표</li><li><b>차량</b>: 6명+짐+카시트면 7인승 이상 또는 차량 2대 권장</li></ul>
       </div>
     </section>
     <p class="footer">작성 파일: jeju-shinhwa-family-trip-summary.html · 민감정보/자격증명은 포함하지 않음</p>
