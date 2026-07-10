@@ -30,6 +30,7 @@
     .list{display:grid;gap:10px}.item{padding:14px;border-radius:17px;background:#fff;border:1px solid var(--line)}.item strong{display:block}.tag{display:inline-block;margin:4px 6px 0 0;padding:4px 8px;border-radius:999px;background:#f1e4ce;color:#5b4a32;font-size:12px;font-weight:800}
     .links{columns:2;column-gap:28px}.links li{break-inside:avoid;margin:0 0 8px}.notice{border-left:5px solid var(--orange);background:#fff4e8}.ok{border-left:5px solid var(--green)}.warn{border-left:5px solid var(--red)}
     .mapimg{width:100%;border-radius:18px;border:1px solid var(--line);background:#fff}.footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
+    .detail-button{display:inline-block;margin-top:4px;padding:0;border:0;background:none;color:var(--blue);font:inherit;font-weight:900;text-decoration:underline;text-underline-offset:3px;cursor:pointer}.detail-button:hover{color:var(--orange)}.detail-button:focus-visible{outline:3px solid rgba(33,102,166,.35);outline-offset:3px;border-radius:6px}.modal{width:min(760px,calc(100vw - 28px));max-height:84vh;padding:0;border:0;border-radius:24px;background:var(--paper);box-shadow:0 28px 90px rgba(20,18,14,.35);color:var(--ink)}.modal::backdrop{background:rgba(22,18,12,.56);backdrop-filter:blur(5px)}.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:22px 24px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#fff4e2,#eef7f1)}.modal-head h2{margin:0;font-size:24px}.modal-close{border:1px solid var(--line);background:#fff;border-radius:999px;width:38px;height:38px;font-size:24px;line-height:1;cursor:pointer}.modal{overflow:hidden}.modal-body{padding:22px 24px 26px;max-height:calc(84vh - 92px);overflow:auto}.modal-body h3{margin:22px 0 10px;font-size:18px}.modal-body p{margin:0 0 14px}.modal-body code{padding:2px 6px;border-radius:7px;background:#efe3d0;color:#5b351f;font-weight:900}.modal-body table{width:100%;border-collapse:separate;border-spacing:0;margin:14px 0 18px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}.modal-body th,.modal-body td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}.modal-body tr:last-child td{border-bottom:0}.modal-body th{background:#f1e4ce;color:#5b4a32}.path-box{padding:14px 16px;border-radius:16px;background:#fff;border:1px dashed var(--orange);font-weight:900;color:#4a3724}
     @media(max-width:900px){.span-8,.span-6,.span-4{grid-column:span 12}.kpi{grid-template-columns:repeat(2,1fr)}.day-strip{grid-template-columns:1fr}.day-label{min-height:auto}.schedule-line{grid-template-columns:1fr}.schedule-line:before{left:11px;right:auto;top:22px;bottom:22px;width:3px;height:auto}.slot{padding:0 0 0 42px}.dot{left:0}.links{columns:1}.hero h1{font-size:32px}.nav{border-radius:22px}.nav a{font-size:12px}}
     @media print{body{background:white}.nav{display:none}.card,.hero{box-shadow:none}.wrap{max-width:none}.hero{break-inside:avoid}.card{break-inside:avoid}}
   </style>
@@ -63,7 +64,7 @@
         <h2>여행 일정</h2>
         <p class="small">한 줄로 읽히는 DAY별 타임라인 차트로 바꿨습니다. 왼쪽은 날짜, 오른쪽은 시간 순서라 가족끼리 공유하기 쉽습니다.</p>
         <div class="daily-board">
-          <article class="day-strip d-orange"><div class="day-label"><b>DAY 1</b><span>7/11 토 · 도착/오설록</span></div><div><div class="day-title"><h3>점심 후 오설록, 저녁은 화산 BBQ</h3><p>도착일은 핵심만 짧게 넣고, 낮잠과 체크인을 확보합니다.</p></div><div class="schedule-line"><div class="slot"><i class="dot"></i><time>11:25</time><span>제주공항 도착<br><em class="soft">렌트카·카시트 확인</em></span></div><div class="slot"><i class="dot"></i><time>12:00</time><span class="meal">점심<br>공항 근처 고기국수 + 돔베고기</span></div><div class="slot"><i class="dot"></i><time>13:30</time><span><em class="place">오설록</em><br>녹차밭 사진 → 티뮤지엄 → 카페 → 기념품샵</span></div><div class="slot"><i class="dot"></i><time>15:30</time><span>신화월드 이동<br>체크인·낮잠·산책</span></div><div class="slot"><i class="dot"></i><time>19:30</time><span class="meal">화산 HWASAN BBQ<br>21:10 불꽃놀이</span></div></div></div></article>
+          <article class="day-strip d-orange"><div class="day-label"><b>DAY 1</b><span>7/11 토 · 도착/오설록</span></div><div><div class="day-title"><h3>점심 후 오설록, 저녁은 화산 BBQ</h3><p>도착일은 핵심만 짧게 넣고, 낮잠과 체크인을 확보합니다.</p></div><div class="schedule-line"><div class="slot"><i class="dot"></i><time>11:25</time><span>제주공항 도착<br><button type="button" class="detail-button" data-open-modal="socar-modal">렌트카·카시트 확인</button></span></div><div class="slot"><i class="dot"></i><time>12:00</time><span class="meal">점심<br>공항 근처 고기국수 + 돔베고기</span></div><div class="slot"><i class="dot"></i><time>13:30</time><span><em class="place">오설록</em><br>녹차밭 사진 → 티뮤지엄 → 카페 → 기념품샵</span></div><div class="slot"><i class="dot"></i><time>15:30</time><span>신화월드 이동<br>체크인·낮잠·산책</span></div><div class="slot"><i class="dot"></i><time>19:30</time><span class="meal">화산 HWASAN BBQ<br>21:10 불꽃놀이</span></div></div></div></article>
           <article class="day-strip d-blue"><div class="day-label"><b>DAY 2</b><span>7/12 일 · 테마/워터</span></div><div><div class="day-title"><h3>오전 신화테마파크, 오후 신화워터파크</h3><p>오전은 놀이공원, 낮잠 뒤 오후는 물놀이로 리조트 안에서 해결합니다.</p></div><div class="schedule-line"><div class="slot"><i class="dot"></i><time>09:00</time><span>조식<br>아이 컨디션 확인</span></div><div class="slot"><i class="dot"></i><time>10:00</time><span>신화테마파크<br><em class="soft">놀이기구/캐릭터</em></span></div><div class="slot"><i class="dot"></i><time>12:00</time><span class="meal">점심<br>리조트 내 빠른 식사</span></div><div class="slot"><i class="dot"></i><time>13:00</time><span>방 복귀 낮잠</span></div><div class="slot"><i class="dot"></i><time>15:30</time><span>신화워터파크<br><em class="soft">물놀이</em></span></div></div></div></article>
           <article class="day-strip d-green"><div class="day-label"><b>DAY 3</b><span>7/13 월 · 동물원/워터</span></div><div><div class="day-title"><h3>오전 신화 동물원, 오후 신화워터파크</h3><p>오전에는 모모쥬 동물원을 짧게 보고, 낮잠 뒤 다시 워터파크로 갑니다.</p></div><div class="schedule-line"><div class="slot"><i class="dot"></i><time>10:00</time><span>신화 동물원<br><em class="soft">모모쥬</em></span></div><div class="slot"><i class="dot"></i><time>12:00</time><span class="meal">점심<br>리조트 내 빠른 식사</span></div><div class="slot"><i class="dot"></i><time>13:00</time><span>방 복귀 낮잠</span></div><div class="slot"><i class="dot"></i><time>15:30</time><span>신화워터파크<br><em class="soft">물놀이 2일차</em></span></div><div class="slot"><i class="dot"></i><time>18:30</time><span class="meal">저녁<br>포장/Backlog 맛집 비교</span></div></div></div></article>
           <article class="day-strip d-yellow"><div class="day-label"><b>DAY 4</b><span>7/14 화 · 뽀로로/공항</span></div><div><div class="day-title"><h3>점심 전후 뽀로로 테마파크, 공항 복귀</h3><p>17:35 출발이라 오전 체크아웃 후 뽀로로를 짧게 넣고 15:30 공항 도착을 지킵니다.</p></div><div class="schedule-line"><div class="slot"><i class="dot"></i><time>09:00</time><span>조식 후 짐 정리<br>체크아웃</span></div><div class="slot"><i class="dot"></i><time>11:30</time><span>뽀로로 테마파크<br><em class="soft">점심 시간대 2~2.5시간</em></span></div><div class="slot"><i class="dot"></i><time>13:30</time><span class="meal">간단 점심/간식<br>아이 컨디션 우선</span></div><div class="slot"><i class="dot"></i><time>15:30</time><span>공항 도착 목표</span></div><div class="slot"><i class="dot"></i><time>17:35</time><span>제주공항 출발</span></div></div></div></article>
@@ -159,5 +160,50 @@
     </section>
     <p class="footer">작성 파일: jeju-shinhwa-family-trip-summary.html · 민감정보/자격증명은 포함하지 않음</p>
   </div>
+  <dialog id="socar-modal" class="modal" aria-labelledby="socar-modal-title">
+    <div class="modal-head">
+      <div>
+        <div class="eyebrow" style="color:#9a5a20">Socar Shuttle Guide</div>
+        <h2 id="socar-modal-title">제주공항 → 제주 쏘카터미널 이동 안내</h2>
+      </div>
+      <button type="button" class="modal-close" data-close-modal aria-label="팝업 닫기">×</button>
+    </div>
+    <div class="modal-body">
+      <p><strong>제주공항에서는 <code>제주 쏘카터미널</code> 차량을 예약하고 무료 셔틀로 이동하는 게 가장 편합니다.</strong> 공항 주변의 일반 쏘카존을 잡고 택시로 이동하는 방식은 비추천입니다.</p>
+      <h3>공항 도착 후 이동 경로</h3>
+      <p class="path-box">제주공항 1층 5번 게이트 → 횡단보도 → 렌터카하우스 → 5구역 12번</p>
+      <p>여기서 <strong>쏘카 전용 셔틀버스</strong>를 타면 약 5분 만에 제주 쏘카터미널에 도착합니다.</p>
+      <table>
+        <thead><tr><th>항목</th><th>안내</th></tr></thead>
+        <tbody>
+          <tr><td>셔틀 탑승 위치</td><td>렌터카 셔틀 승차장 <strong>5구역 12번</strong></td></tr>
+          <tr><td>공항 출발</td><td>오전 <strong>7:20~오후 11:00</strong></td></tr>
+          <tr><td>배차 간격</td><td>약 <strong>20분</strong></td></tr>
+          <tr><td>이동 시간</td><td>약 <strong>5분</strong></td></tr>
+          <tr><td>비용</td><td>무료</td></tr>
+        </tbody>
+      </table>
+      <p>셔틀 운영시간과 탑승 구역은 변경될 수 있으니, 출발 당일에는 <strong>쏘카 앱 예약 상세 화면이나 알림톡</strong>을 마지막으로 확인하세요.</p>
+      <p>비행기 도착 후 짐을 찾는 시간까지 고려하면, <strong>차량 예약 시작 시각은 도착 예정 시각보다 40~60분 뒤</strong>로 잡는 것이 안전합니다.</p>
+    </div>
+  </dialog>
+  <script>
+    document.querySelectorAll('[data-open-modal]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const modal = document.getElementById(button.dataset.openModal);
+        if (modal && typeof modal.showModal === 'function') modal.showModal();
+      });
+    });
+    document.querySelectorAll('[data-close-modal]').forEach((button) => {
+      button.addEventListener('click', () => button.closest('dialog')?.close());
+    });
+    document.querySelectorAll('dialog.modal').forEach((modal) => {
+      modal.addEventListener('click', (event) => {
+        const rect = modal.getBoundingClientRect();
+        const inside = event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom;
+        if (!inside) modal.close();
+      });
+    });
+  </script>
 </body>
 </html>
